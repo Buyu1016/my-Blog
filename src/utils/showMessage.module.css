@@ -1,0 +1,31 @@
+.showmessage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(15px);
+  padding: 3px 5px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.showmessage .icon {
+  font-size: 22px;
+  margin-right: 5px;
+}
+.showmessage.message-info {
+  background: #6b9eee;
+}
+.showmessage.message-warn {
+  background: #dc6a12;
+}
+.showmessage.message-error {
+  background: #cc3600;
+}
+.showmessage.message-success {
+  background: #7ebf50;
+}
